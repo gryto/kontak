@@ -74,6 +74,7 @@ class _InfoUserState extends State<InfoUser> {
       final nip = todo['nip'].toString();
       final phone = todo['no_hp'];
       final role = todo['role_id'].toString();
+      // ignore: unused_local_variable
       final roleId = todo['role_id'].toString();
       final _image = todo['image'];
       final username =

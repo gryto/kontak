@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import '../launcher/launcher.dart';
@@ -8,7 +7,6 @@ import 'constant.dart';
 import 'preference.dart';
 
 logoutDialog(BuildContext context) {
-  final storage = FlutterSecureStorage();
   SharedPref sharedPref = SharedPref();
 
   Future<void> _deleteFile(String filePath) async {

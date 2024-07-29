@@ -6,6 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 import '../../../src/api.dart';
 import '../../../src/constant.dart';
 
+// ignore: must_be_immutable
 class ContactDetail extends StatelessWidget {
   String contactName,
       contactEmail,

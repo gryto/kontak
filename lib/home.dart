@@ -1,17 +1,12 @@
 import 'dart:convert';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import '../src/preference.dart';
 import 'gen/assets.gen.dart';
 import 'screen/contact/component/list.dart';
-import 'screen/contact/page.dart';
-import 'screen/profile/component/detail.dart';
 import 'screen/profile/page.dart';
 import 'src/api.dart';
 import 'src/constant.dart';
 import 'src/dialog_info.dart';
-import 'src/loader.dart';
 import 'src/toast.dart';
 import 'src/utils.dart';
 import 'package:http/http.dart' as http;
@@ -178,8 +173,6 @@ class _MainTabBarState extends State<MainTabBar> {
 
   @override
   Widget build(BuildContext context) {
-    double h = MediaQuery.of(context).size.height - 20;
-    double w = MediaQuery.of(context).size.width - 0;
     var mediaQueryHeight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(

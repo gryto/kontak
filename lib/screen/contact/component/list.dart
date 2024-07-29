@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../../gen/assets.gen.dart';
 import '../../../src/api.dart';
 import '../../../widgets/notification_widget.dart';
 import 'detail.dart';
@@ -29,10 +28,12 @@ class _ContactListState extends State<ContactList> {
             physics: const NeverScrollableScrollPhysics(),
             shrinkWrap: true,
             itemBuilder: (_, index) {
+              // ignore: unused_local_variable
               var reversedIndex =
                   widget.data.length - 1 - index; // Menghitung indeks terbalik
               var row = widget.data[index];
               print("sosid");
+              // ignore: unused_local_variable
               var photo = row['image'];
 
               var img = "";
